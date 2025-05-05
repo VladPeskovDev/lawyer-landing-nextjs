@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Центр (меню - скрывается на мобилке) */}
         <ul className={styles.center}>
           <li>
-            <Link href="/">Главный экран</Link>
+            <Link href="/">Главная страница</Link>
           </li>
           <li>
             <Link href="/services">Услуги</Link>

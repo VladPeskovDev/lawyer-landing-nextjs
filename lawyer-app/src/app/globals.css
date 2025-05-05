@@ -1,19 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1A1C29; /* единый фон */
+  --foreground: #ffffff; /* белый текст */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Убираем смену темы — она не нужна, всегда один цвет */
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  height: 100%; /* добавим высоту на случай липкого футера */
 }
 
 body {
@@ -22,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 80px; /* ✅ ДОБАВЛЕННЫЙ паддинг для футера */
 }
 
 * {
@@ -35,8 +31,12 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Оптимизация для мобилки (адаптивная типографика) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+    padding-bottom: 100px; /* для мобилки чуть больше запаса под футер */
   }
 }
+

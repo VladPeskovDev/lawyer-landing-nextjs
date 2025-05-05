@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1440px;
   height: 66px;
-  padding: 12px 59px;
+  padding: 12px 30px;
   background-color: #1A1C29;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1;
-  letter-spacing: 0;
+  letter-spacing: -1px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -51,7 +51,7 @@
   color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -74,7 +74,7 @@
   color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 }
 

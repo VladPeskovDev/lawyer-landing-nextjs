@@ -1,0 +1,107 @@
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 1441px;
+    height: 588px;
+    background: url('/mainfon.png') center/cover no-repeat; /* Заглушка */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Блок с текстом */
+  .textBlock {
+    position: absolute;
+    top: 60px;
+    left: 59px;
+    width: 557px;
+    height: 172px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  /* Блок со статистикой */
+  .statsBlock {
+    position: absolute;
+    bottom: 67px;
+    left: 59px;
+    width: 630px;
+    height: 64px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .statItem {
+    width: 200px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .statNumber {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .statLabel {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 400px; /* уменьшаем высоту для мобилки */
+      background-size: cover;
+    }
+  
+    .textBlock {
+      top: 30px;
+      left: 20px;
+      width: auto;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 8px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  
+    .statsBlock {
+      bottom: 20px;
+      left: 20px;
+      width: auto;
+      height: auto;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .statItem {
+      width: 140px;
+      height: auto;
+    }
+  
+    .statNumber {
+      font-size: 16px;
+    }
+  
+    .statLabel {
+      font-size: 12px;
+    }
+  }
+  
+  

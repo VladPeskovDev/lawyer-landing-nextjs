@@ -1,0 +1,66 @@
+.footer {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    background-color: #1A1C29; /* Явно ставим твой основной фон */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .footerText {
+    margin: 0;
+    color: #b3b3b3;
+    font-size: 0.75rem;
+  }
+  
+  .linksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .iconLinkTG,
+  .iconLinkWA {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 1.2rem; /* немного увеличим иконки */
+  }
+  
+  .iconLinkTG:hover,
+  .iconLinkWA:hover {
+    color: #5688A2; /* под твой основной стиль подсветка */
+  }
+  
+  .footerLink {
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 0.875rem;
+  }
+  
+  .footerLink:hover {
+    color: #5688A2;
+  }
+  
+  /* (по желанию, если хочется уменьшить текст футера на мобилках) */
+  @media (max-width: 768px) {
+    .footerText {
+      font-size: 0.65rem;
+    }
+    .footerLink {
+      font-size: 0.75rem;
+    }
+    .iconLinkTG,
+    .iconLinkWA {
+      font-size: 1rem;
+    }
+  }
+  
