@@ -1,0 +1,198 @@
+.navbar {
+  width: 100%;
+  max-width: 1440px;
+  height: 66px;
+  padding: 12px 59px;
+  background-color: #1A1C29;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* чтобы бургер-меню раскрывалось вниз */
+}
+
+.container {
+  width: 1322px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Левая часть */
+.left {
+  width: 234px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: #5688A2;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Центр */
+.center {
+  width: 636px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center a {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.center a:hover {
+  color: #5688A2;
+}
+
+/* Правая часть */
+.right {
+  width: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.phoneNumber {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.phoneText {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 2px;
+}
+
+/* ============= */
+/* Бургер-кнопка */
+/* ============= */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burgerLine {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* =============== */
+/* Выпадающее меню */
+/* =============== */
+.mobileMenu {
+  width: 100%;
+  background-color: #1A1C29;
+  padding: 20px 0;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.mobileMenu a {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobileMenu a:hover {
+  color: #5688A2;
+}
+
+/* ====================== */
+/* АДАПТИВКА ДЛЯ МОБИЛКИ */
+/* ====================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 14px; /* стало меньше */
+  }
+
+  .center {
+    display: none; /* скрываем обычное меню */
+  }
+
+  .burger {
+    display: flex; /* показываем бургер */
+  }
+
+  .right {
+    width: auto;
+    align-items: flex-end;
+  }
+
+  .phoneNumber {
+    font-size: 14px; /* уменьшили */
+    line-height: 18px;
+  }
+
+  .phoneText {
+    font-size: 12px; /* уменьшили */
+    line-height: 16px;
+    margin-top: 1px;
+  }
+
+  .mobileMenu a {
+    font-size: 14px; /* уменьшили шрифт в меню */
+  }
+}
